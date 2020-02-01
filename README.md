@@ -2,6 +2,8 @@
 
 ### 说明
 
+MySQL workbench 版本: 8.x
+
 > mysql workbench 是一个面向数据库架构师、开发人员和dba的统一可视化工具。MySQL工作台为服务器配置、用户管理、备份等提供了数据建模、SQL开发和全面的管理工具。MySQL Workbench在Windows、Linux和Mac OS X上可用。
 
 
@@ -10,9 +12,16 @@
 
 
 
+## 文件说明
+
+* main_menu_en.xml 英文(原版自带)
+* main_menu.xml 中文版
+
+
+
 ### 使用说明
 
-复制 `main_menu.xml` 替换 `mysql workbench 安装目录\data\main_menu.xml`
+复制 `main_menu_zh.xml` 替换 `mysql workbench` 的 `安装目录\data\main_menu.xml`
 
 
 
