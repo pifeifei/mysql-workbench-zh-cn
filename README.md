@@ -21,7 +21,7 @@ MySQL workbench 版本: 8.x
 
 ### 使用说明
 
-复制 `main_menu_zh.xml` 替换 `mysql workbench` 的 `安装目录\data\main_menu.xml`
+复制 `main_menu.xml` 替换 `mysql workbench` 安装目录的 `data/main_menu.xml` 文件。
 
 
 
