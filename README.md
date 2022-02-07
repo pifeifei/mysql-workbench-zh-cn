@@ -22,3 +22,16 @@
 复制 `main_menu.xml` 替换 `mysql workbench` 安装目录的 `data/main_menu.xml` 文件。
 
 MacOS: /Applications/MySQLWorkbench.app/Contents/Resources/data/main_menu.xml
+
+Windows(默认): C:\Program Files\MySQL\MySQL Workbench 8.0 CE\data\main_menu.xml
+
+## 连 MySQL 报错：SSL connection error
+
+```shell
+# 1. 先退出 mysql workbench （8.0.27+）
+# 2. 执行下面的代码，windows 在 git bash 窗口中执行命令
+sed -i "s/useSSL\">2/useSSL\">0/" ${APPDATA}/MySQL/Workbench/connections.xml # windows
+sed -i "s/useSSL\">2/useSSL\">0/"  ${HOME}/.mysql/workbench/connections.xml # 应该是这个目录
+
+## 把文件 connections.xml 中 useSSL 的值改成 0 即可
+```
